@@ -1,0 +1,3 @@
+知乎插件：
+1.知乎助手：chrome商店；1、一键批量取消知乎关注的问题 2、一键批量取消知乎中自己主页动态下的点赞，高效解决知乎的某几个痛点
+2.知乎下载器：https://github.com/Howardzhangdqs/zhihu-copy-as-markdown；下载知乎的文章（没有评论）
