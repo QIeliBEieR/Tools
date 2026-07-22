@@ -1,0 +1,32 @@
+.Friend-links-Copyright{
+    width: 85%;
+    margin-left: 15%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.Friend-links-Copyright h6{
+    margin-bottom: 0px;
+}
+.Friend-links{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 每行四个卡片 */
+    grid-gap: 10px; /* 间距 */
+    margin-left: 5px;
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f5;
+}
+.Friend-links [friend-link] a {
+    color: rgb(0, 0, 0, 0.6);
+    text-decoration: none; /* 移除下划线 */
+}
+
+.Friend-links [friend-link] a:hover {
+    color: red;
+}
+.Copyright{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6); /* 使用 rgba 表示黑色并设置透明度（0.6表示相对淡一点） */
+    text-align: center;
+}

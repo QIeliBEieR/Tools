@@ -1,0 +1,87 @@
+.TWC{
+    display:flex;
+    flex-direction: row;
+    height: 25px;
+    width: 100%;
+    background-color: white;
+    /* 等下在这里改，跟主体颜色一致即可 */
+    margin-left: 15px;
+    margin-top: 0px;
+    justify-content: left; /* 水平向左对齐子元素 */
+}
+
+.Tag{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    width: auto;
+    background-color: #f4f4f5;
+    border-radius: 10px; /* 圆角 */
+    margin-left: 0px;
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: center; /* 水平居中对齐子元素 */
+}
+ .Tag .tag-img{
+    height: 10px;
+    width: 10px;
+    margin-left: 1px;
+}
+.Tag .tag{
+    width: auto;
+    font-size: 13px;
+    color: red;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+.Tag .tag a{
+    text-decoration: none; /* 取消超链接下划线 */
+    font-size: 13px;
+    color: red;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+/* .Tag:hover{
+    background-color: #c4f4f5;
+}         */
+.Watch{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin-left: 10px;
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: center; /* 水平居中对齐子元素 */
+}
+.Watch .eye-img{
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+.Watch .watch{
+    width: auto;
+    font-size: 10px;
+    color: black;
+    margin-left: 3px;
+}
+ .Comment{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin-left: 10px;
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: center; /* 水平居中对齐子元素 */
+}
+.Comment .comment-img{
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+.Comment .comment{
+    width: auto;
+    font-size: 10px;
+    color: black;
+    margin-left: 3px;
+}

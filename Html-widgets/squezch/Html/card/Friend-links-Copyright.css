@@ -1,0 +1,59 @@
+.Friend-links-Copyright{
+    height: auto;
+    width: 100%;
+    border: 1px solid #f4f4f5; /* 边框样式 */
+    border-radius: 16px; /* 圆角 */
+    display: flex;
+    flex-direction: column;
+
+    /* position: relative;
+    bottom: 5px; */
+
+/* 
+    position: absolute;
+    bottom: 0; */
+
+}
+
+.Friend-links-Copyright h6{
+    margin-bottom: 0px;
+}
+.Friend-links {
+    display: grid;
+    grid-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* 设置默认为每行6个列，适用于大屏幕设备 */
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* 媒体查询，根据屏幕宽度调整列数 */
+@media screen and (max-width: 768px) {
+    .Friend-links {
+        /* 小屏幕设备，每行3个列 */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .Friend-links {
+        /* 平板设备，每行4个列 */
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+.Friend-links [friend-link] a {
+    color: rgb(0, 0, 0, 0.6);
+    text-decoration: none; /* 移除下划线 */
+}
+
+.Friend-links [friend-link] a:hover {
+    color: red;
+}
+.Copyright{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6); /* 使用 rgba 表示黑色并设置透明度（0.6表示相对淡一点） */
+    text-align: center;
+}

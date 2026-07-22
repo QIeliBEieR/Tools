@@ -1,0 +1,83 @@
+.sidenav-container{
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.sidenav-search{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.sidenav-search-input {
+    height: 30px;
+    width: 80%;
+    padding: 0 5px; /* 设置内边距为 5px */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100%;
+}
+.sidenav-search-button {
+    height: 30px;
+    width: 20%;
+    padding: 0 5px; /* 设置内边距为 5px */
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidenav-fengexian{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 100%;
+    color: green;
+    display: block;
+}
+.sidenav-sidenav {
+    max-height: 81.5%;
+    min-height: 81.5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    /* 导航栏背景色 */
+    background-color: #F6F7FA;
+    padding-top: 0px;
+    overflow-y: hidden; /* 默认隐藏纵向滚动条 */
+    transition: overflow-y 0.3s ease; /* 添加过渡效果 */
+    border: 2px red;
+    border-radius: 8px;
+}
+.sidenav-sidenav:hover {
+    overflow-y: auto; /* 鼠标悬停时显示纵向滚动条 */
+}
+.sidenav-sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    background-color: #F6F7FA;
+    transition: 0.3s;
+}
+.sidenav-sidenav a:hover {
+    background-color: green;
+    color: white;
+}
+
+.sidenav-sub{
+    display: none;
+}
+.sidenav-sub-menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px; /* 添加左边距以缩进二级导航菜单 */
+}
+.sidenav-sidenav:hover .sidenav-sub{
+    display: block;
+} 
+/* 强调active样式 */
+.sidenav-sidenav .active {
+    background-color: #4CAF50; /* 强调色 */
+}

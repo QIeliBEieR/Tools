@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <link rel="stylesheet" href="./social-media.css">
+    <link rel="stylesheet" href="./sidenav.css">
+    <link rel="stylesheet" href="./twc.css">
+    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" href="./Friend-links-Copyright.css">
+    <!-- <script src="./calculate_time.js"></script> -->
+
+    <style>
+        .Top{
+            height: 50px;
+            width: 100%;
+            background-color: #f4f4f5;
+            border: 2px solid red;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .All{
+            display: flex;
+            flex-direction: row;
+        }           
+        .Left{
+            width: 15%;
+            height: 100vh;
+        }
+     
+        .Right{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            height: auto;
+        }       
+        header{
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            background-color: #f4f4f5;
+            margin-left: 5px;
+            border: 3px solid #f4f4f5;
+            border-radius: 20px;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            margin-left: 5px;
+            width: auto;
+        }
+        footer{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="All">
+
+
+
+
+
+<!-- 左侧导航栏 -->
+    <div class="Left">
+        <div class="sidenav-container">
+            <div class="sidenav-search">
+                <input type="text" class="sidenav-search-input" placeholder="🔍️搜索...">
+                <button class="sidenav-search-button">搜索</button>
+            </div>
+            <div class="sidenav-fengexian">
+                <hr>
+            </div>
+            <div class="sidenav-sidenav">
+                <a href="#"  class="active">数学笔记</a>
+                    <div class="sidenav-sub">
+                        <div class="sidenav-sub-menu">
+                            <a href="#">课程视频</a>
+                            <a href="#">作业练习</a>
+                            <a href="#">试卷讲解</a>
+                        </div>
+                    </div>
+                <a href="#">编程笔记</a>
+                    <div class="sidenav-sub">
+                        <div class="sidenav-sub-menu">
+                            <a href="#">H5&C3</H5></a>
+                            <a href="#">Bootstrap</a>
+                            <a href="#">Java</a>
+                            <a href="#">Python</a>
+                            <a href="#">Django</a>
+                            <a href="#">PyQt5&6</a>
+                        </div>
+                    </div>     
+                <a href="#">软件评测</a>
+                    <div class="sidenav-sub">
+                        <div class="sidenav-sub-menu">
+                            <a href="#">工具类</a>
+                            <a href="#">笔记类</a>
+                            <a href="#">音乐类</a>
+                        </div>
+                    </div>
+                <a href="#">标签集</a>
+                    <div class="sidenav-sub">
+                        <div class="sidenav-sub-menu">
+                            <a href="#">创作集</a>
+                            <a href="#">分享集</a>
+                        </div>
+                    </div>
+                <a href="#">时光影纪</a>           
+                <a href="#">AI工具</a>
+                <a href="#">网站日常</a>
+                <a href="#">时光影纪</a>           
+                <a href="#">AI工具</a>
+                <a href="#">网站日常</a>
+                <a href="#">时光影纪</a>           
+                <a href="#">AI工具</a>
+                <a href="#">网站日常5</a>
+     
+     
+
+            </div>
+            <div class="sidenav-fengexian">
+                <hr>
+            </div>
+            <!-- 使用 link-container 封装组件 -->
+            <div class="link-container">
+                <a class="social-media centered-link" href="https://github.com/QIeliBEieR" rel="Github:QIeliBEieR">    <img class="svg-image" src="./img/github.svg" ></a>
+                <div class="centered-text">Github:QIeliBEieR</div>
+        
+                <a class="social-media centered-link" href="https://www.zhihu.com/people/zui-yan-zhong-de-meng-long-31"><img class="svg-image" src="./img/zhihu.svg" ></a>
+                <div class="centered-text">Zhihu:墨譚</div>
+                
+                <a class="social-media centered-link" href="https://t.me/QIeliBEieR">                                  <img class="svg-image" src="./img/telegram.svg"></a>
+                <div class="centered-text">Telegram:QIeliBEieR</div>
+                
+                <a class="social-media centered-link" href="https://twitter.com/QIeliBEieR">                           <img class="svg-image" src="./img/twitter.svg"></a>
+                <div class="centered-text">Twitter:QIeliBEieR</div>
+                
+                <a class="social-media centered-link" href="mailto:zuiyanzhongdemenglong@gmail.com">                   <img class="svg-image" src="./img/email.svg"></a>
+                <div class="centered-text">Gmail:zuiyanzhongdemenglong</div>
+            </div>
+        </div>
+    </div>
+<!-- 右侧 -->
+    <div class="Right">
+        <!-- 右上 -->
+        <!-- <header>
+            result for 初中数学：
+        </header> -->
+
+        <!-- 右中 -->
+        <main>
+            <div class="card-containery">
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20210919_175026.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20200917_200059.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20210919_175026.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20200917_200059.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>    
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20210919_175026.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20200917_200059.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20210919_175026.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="magnifier"></div>
+                    <img src="./IMG_20200917_200059.jpg" alt="Card Image" class="image">
+                    <div class="card-body">
+                        <h5 class="card-title">优雅使用 Cloudflare WARP 应对 RSSHub 反爬难题</h5>
+                        <p class="card-text">本文送给更开放的互联网 起因是看到描述本学期在德智体美劳等诸多方面的成长情况.描述本学期在德智体美劳等诸多方面的成长情况.</p>
+                        <div class="TWC">
+                            <div class="Tag">
+                                <img class="tag-img" src="tag.svg">
+                                <div class="tag"><a href="#">创作集</a></div>
+                            </div>
+                            <div class="Watch">
+                                <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+                            </div>
+                            <div class="Comment">
+                                <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+                            </div>
+                        </div>
+                        <!-- 时间标签 -->
+                        <div class="time-label">
+                            <span id="timeLabel"></span>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </main>
+
+        <!-- 右下常用 页码导航-->
+        <div class="Right-Bottom">
+
+        </div>
+    </div>
+
+</div>
+
+    <!-- 底部 -->
+    <!-- 友情链接&备案信息 -->
+    <footer>
+        <div class="Friend-links-Copyright">
+            <h6>友情链接:</h6>
+            <div class="Friend-links">
+                <div friend-link><a href="https://www.google.com">谷歌 </a></div>
+                <div friend-link><a href="https://www.bilbil.com">哔哩哔哩 </a></div>
+                <div friend-link><a href="https://www.taobao.com">淘宝 </a></div>
+                <div friend-link><a href="https://www.google.com">谷歌 </a></div>
+                <div friend-link><a href="https://www.bilbil.com">哔哩哔哩</a></div>
+                <div friend-link><a href="https://www.taobao.com">淘宝 </a></div>
+                <div friend-link><a href="https://www.google.com">谷歌 </a></div>
+                <div friend-link><a href="https://www.bilbil.com">哔哩哔哩 </a></div>
+                <div friend-link><a href="https://www.taobao.com">淘宝 </a></div>
+                <div friend-link><a href="https://www.google.com">谷歌 </a></div>
+                <div friend-link><a href="https://www.bilbil.com">哔哩哔哩 </a></div>
+                <div friend-link><a href="https://www.taobao.com">淘宝 </a></div>
+                <div friend-link><a href="https://www.github.com">Github</a></div>
+            </div>
+            <div class="Copyright">
+                Copyright © 2023 nullno RobotHub 鄂ICP备15019538号-3    鄂公网安备 42011502000584号  
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript 代码，计算并更新时间标签的内容
+        const timeLabel = document.getElementById("timeLabel");
+        // 时间计算多少错误
+        // 提交时间（使用 "Asia/Shanghai" 时区）
+        const submissionDate = new Date("2023-08-05T18:21:00"); // 假设是提交的时间
+
+        // 当前时间（使用 "Asia/Shanghai" 时区）
+        const currentDate = new Date();
+
+        // 计算时间差（以毫秒为单位）
+        const timeDifference = currentDate - submissionDate;
+
+        // 计算时间差的各种单位
+        const seconds = Math.floor(timeDifference / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+        const weeks = Math.floor(days / 7);
+        const months = Math.floor(days / 30.44); // 平均每月的天数
+        const years = Math.floor(days / 365);
+
+        if (seconds < 60) {
+            timeLabel.textContent = `${seconds} 秒前`;
+        } else if (minutes < 60) {
+            timeLabel.textContent = `${minutes} 分钟前`;
+        } else if (hours < 24) {
+            timeLabel.textContent = `${hours} 小时前`;
+        } else if (days < 7) {
+            timeLabel.textContent = `${days} 天前`;
+        } else if(weeks<7){
+            timeLabel.textContent = `${weeks} 周前`;
+        }
+         else if (months < 12) {
+            timeLabel.textContent = `${months} 个月前`;
+        } else if (years < 100) {
+            timeLabel.textContent = `${years} 年前`;
+        } else {
+            timeLabel.textContent = `时间错误`;
+        }
+    </script>
+</body>
+
+</html>

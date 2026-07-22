@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大器</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: 300px; /* 设置容器宽度 */
+            height: 200px; /* 设置容器高度 */
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .magnifier {
+            position: absolute;
+            width: 100px; /* 设置放大镜框宽度 */
+            height: 100px; /* 设置放大镜框高度 */
+            background: rgba(255, 255, 255, 0.6); /* 设置放大镜框背景，半透明白色 */
+            border: 2px solid #333; /* 设置放大镜框边框 */
+            cursor: zoom-in; /* 设置鼠标样式为放大镜样式 */
+            display: none; /* 初始隐藏放大镜框 */
+        }
+
+        .image-container:hover .magnifier {
+            display: block; /* 鼠标悬停时显示放大镜框 */
+        }
+
+        /* 添加放大效果 */
+        .image-container:hover .image {
+            transform: scale(1.05); /* 鼠标悬停时将图片放大 */
+            transform-origin: center center;          
+            transition: transform 0.8s ease; /* 放大效果持续时间设置为1秒 */
+        }
+        .image-container .image {
+            transition: transform 0.8s ease; /* 回缩效果持续时间也设置为1秒 */
+        }
+
+            </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="magnifier"></div>
+        <img src="./IMG_20200917_200059.jpg" alt="Image" class="image">
+    </div>
+</body>
+</html>
+
+
+

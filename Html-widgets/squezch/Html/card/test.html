@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <style>
+        /* 自定义卡片样式 */
+        .card {
+            flex: 1; /* 平均分配宽度 */
+            max-width: 300px;
+            min-width: 300px;
+            max-height: 260px;
+            min-height: 260px;
+            margin: 10px, 10px;
+            border: 1px solid green; /* 边框样式 */
+            border-radius: 5px; /* 圆角 */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 阴影效果 */
+            overflow: hidden;
+            background-color: white;
+            color: white;
+            position: relative; /* 设置卡片的定位为相对定位 */
+        }
+
+        /* 图片样式 */
+        .card img {
+            width: 100%;
+            min-height: 160px;
+            max-height: 160px;
+            border-top-left-radius: 5px; /* 图片上左角圆角 */
+            border-top-right-radius: 5px; /* 图片上右角圆角 */
+        }
+        /* 卡片标题样式 */
+        .card-title {
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 3px;
+            margin-left: 5px;
+            margin-bottom: 0; /* 设置与下方元素的外边距为零 */
+        }
+        /* 卡片文本样式 */
+        .card-text {
+            min-height: 45px;
+            max-height: 45px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* white-space: nowrap; */
+            white-space: pre-line; /* 或 white-space: normal; */
+            overflow: hidden;
+            color: green;
+            font-size: 15px;
+            margin-left: 5px;
+            margin-top: 0px;
+
+        }
+        .card-body .card-text:hover {
+            /* max-height: none; 鼠标覆盖时取消最大高度限制，展开内容 */
+            overflow: visible;
+            white-space: normal;
+        }
+        /* 按钮样式 */
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+
+            position: absolute; /* 设置按钮的定位为绝对定位 */
+            bottom: 0; /* 将按钮的底边与父级（.card）的底边对齐 */
+        }
+        .All{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: x;
+        }
+        .navbar{
+            display: block;
+            width: 15%;
+            height: 100%;
+            border: 2px solid green;
+            border-radius: 10px;
+            background-color: #007bff;
+        }
+        .card-containery{
+            width: 85%;
+            margin-left: 12px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 每行四个卡片 */
+            grid-gap: 10px; /* 间距 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="All">
+
+        <!-- 左边导航栏 -->
+        <div class="navbar">
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello   
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+            nihao
+            <br>
+            hello
+        </div>
+        <!-- 右边视频展示区 -->
+        <div class="card-containery">
+                <div class="card">
+                    <img src="./IMG_20210919_175026.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">合并同类项之韩老师的在线数学课堂</h5>
+                        <p class="card-text">sdkndsjnjidnjkfnsjandkjlfjsadiokkndklsjakhello world! This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./LyricPoster_1609829331284.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG_20200917_200059.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./v2-460089345e083b0ed35ff5ed617ac4c6-01_mh1609689707504.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./1609665608225_mh1609689873783.jpg" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a sample card with some text content. You can add more text here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

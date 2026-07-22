@@ -1,0 +1,101 @@
+.card {
+    flex: 1; /* 平均分配宽度 */
+    max-width: 310.5px;
+    min-width: 310.5px;
+    max-height: 338px;
+    min-height: 338px;
+    margin: 30px, 10px;
+    border: 1px solid white; /* 边框样式 */
+    border-radius: 16px; /* 圆角 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    overflow: hidden;
+    background-color: white;
+    color: white;
+    position: relative; /* 设置卡片的定位为相对定位 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+/* 图片样式 */
+.card img {
+    width: 100%;
+    min-height: 174px;
+    max-height: 174px;
+    border-top-left-radius: 5px; /* 图片上左角圆角 */
+    border-top-right-radius: 5px; /* 图片上右角圆角 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+/* 放大器 */
+.magnifier {
+    position: absolute;
+    width: 100%;/*设置放大镜框宽度 */
+    max-height: 170px;/*设置放大镜框高度 */
+    /* width: 100px; /* 
+    height: 100px; */
+    background: rgba(255, 255, 255, 0.6); /* 设置放大镜框背景，半透明白色 */
+    border: 2px solid #333; /* 设置放大镜框边框 */
+    cursor: zoom-in; /* 设置鼠标样式为放大镜样式 */
+    display: none; /* 初始隐藏放大镜框 */
+}
+.card:hover .magnifier {
+    display: block; /* 鼠标悬停时显示放大镜框 */
+}
+/* 卡片标题样式 */
+.card-title {
+    color: black;
+    font-family: '微软雅黑', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 11px;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 10px; /* 设置与下方元素的外边距为零 */
+}
+/* 卡片文本样式 */
+.card-text {
+    font-family: '微软雅黑', sans-serif;
+    font-size: 14px;
+    min-height: 17px;
+    max-height: 17px;
+    
+    color: rgba(0, 0, 0, 0.6); /* 使用 rgba 表示黑色并设置透明度（0.6表示相对淡一点） */
+
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line; 
+    overflow: hidden;
+}
+/* .card-body .card-text:hover {
+    overflow: visible;
+    white-space: normal;
+} */
+/* 添加放大效果 */
+.card:hover .image {
+    transform: scale(1.05); /* 鼠标悬停时将图片放大 */
+    transform-origin: center center;          
+    transition: transform 0.8s ease; /* 放大效果持续时间设置为0.8秒 */
+}
+.card .image {
+    transition: transform 0.8s ease; /* 回缩效果持续时间也设置为0.8秒 */
+}
+.card:hover{
+    background-color: #f4f4f5;
+}
+.card:hover .card-body .TWC{
+    background-color: #f4f4f5;
+}        
+.card .card-body .time-label {
+    height: 18px;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.card-containery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 每行四个卡片 */
+    grid-gap: 10px;  /*间距*/
+
+}

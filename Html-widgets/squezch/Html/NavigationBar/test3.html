@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧边导航栏</title>
+    <style>
+        /* 基本的样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            padding: 0px;
+        }
+
+        /* 外容器样式，使用Flex布局 */
+        .container {
+            display: flex;
+            flex-direction: row; /* 横向排列子元素 */
+        }
+
+        /* 搜索栏样式 */
+        .search-bar {
+            width: 15%;
+            height: 30px;
+            background-color: #F6F7FA;
+            display: flex;
+            flex-direction: column; /* 纵向排列子元素 */
+            align-items: center;
+            padding: 0 3px;
+        }
+
+        /* 设置 search-input 占据 search-bar 的 80% 宽度 */
+        .search-input {
+            width: 80%;
+            padding: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 30px; /* 调整高度为30px以匹配按钮高度 */
+            margin-bottom: 10px; /* 添加下外边距以与按钮分隔开 */
+        }
+
+        /* 设置 search-button 占据 search-bar 的 20% 宽度 */
+        .search-button {
+            width: 20%;
+            padding: 0 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* 侧边导航栏样式 */
+        .sidenav {
+            width: 15%;
+            position: fixed;
+            top: 0;
+            background-color: #F6F7FA;
+            overflow-y: hidden;
+            max-height: 100%;
+            transition: max-height 0.3s ease;
+            border: 2px red;
+            border-radius: 8px;
+        }
+        .sidenav:hover {
+            max-height: 80%;
+        }
+
+        .sidenav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            background-color: #F6F7FA;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            background-color: white;
+            color: aqua;
+        }
+
+        /* 二级导航菜单样式 */
+        .sub-menu {
+            display: none;
+            padding-left: 25px;
+        }
+
+        .sidenav a:hover + .sub-menu {
+            display: block;
+        }
+
+        .sidenav .active {
+            background-color: #4CAF50;
+        }
+
+        /* 内容区域样式 */
+        .content {
+            flex: 1; /* 占据剩余的空间 */
+            margin-left: 18px; /* 添加左外边距以与侧边导航栏分隔开 */
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+   <!-- 外容器 -->
+   <div class="container">
+        <!-- 顶部搜索栏 -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="搜索...">
+            <button class="search-button">搜索</button>
+        </div>
+    
+        <!-- 侧边导航栏 -->
+        <div class="sidenav">
+            <a href="#"  class="active">首页</a>
+            <div class="sub-menu">
+                <a href="#">加入我们</a>
+                <a href="#">感谢我们</a>
+            </div>
+            <a href="#">关于我们</a>
+            <a href="#">服务</a>
+            <div class="sub-menu">
+                <a href="#">加入我们</a>
+                <a href="#">感谢我们</a>
+            </div>
+            <a href="#">联系我们</a>
+            <a href="#">杂感</a>
+            <a href="#">Notion</a>
+            <a href="#">Java</a>
+        </div>
+    
+        <!-- 内容区域 -->
+        <div class="content">
+            <h1>欢迎访问我们的网站</h1>
+            <p>这是一个简单的示例侧边导航栏和内容区域。</p>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+            <h1>欢迎访问我们的网站</h1>
+        </div>
+    </div>
+</body>
+</html>

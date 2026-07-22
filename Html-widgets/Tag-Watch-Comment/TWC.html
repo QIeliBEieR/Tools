@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWC</title>
+    <style>
+        .TWC{
+            display:flex;
+            flex-direction: row;
+            height: 25px;
+            width: auto;
+            background-color: white;
+            align-items: center; /* 垂直居中对齐子元素 */
+            justify-content: center; /* 水平居中对齐子元素 */
+        }
+        .Tag{
+            display: flex;
+            flex-direction: row;
+            height: 25px;
+            width: auto;
+            min-width: fit-content;
+            background-color: #f4f4f5;
+            border-radius: 10px; /* 圆角 */
+            margin-left: 10px;
+            align-items: center; /* 垂直居中对齐子元素 */
+            justify-content: center; /* 水平居中对齐子元素 */
+        }
+        .Tag .tag-img{
+            height: 10px;
+            width: 10px;
+            margin-left: 1px;
+        }
+        .Tag .tag{
+            font-size: 13px;
+            color: red;
+            margin-left: 2px;
+            margin-bottom: 3px;
+        }
+        .Tag .tag a{
+            text-decoration: none; /* 取消超链接下划线 */
+            font-size: 13px;
+            color: red;
+            margin-left: 3px;
+            margin-bottom: 3px;
+        }
+        .Tag:hover{
+            background-color: #c4f4f5;
+        }        
+        
+        .Watch{
+            display: flex;
+            flex-direction: row;
+            height: 25px;
+            margin-left: 10px;
+            align-items: center; /* 垂直居中对齐子元素 */
+            justify-content: center; /* 水平居中对齐子元素 */
+        }
+        .Watch .eye-img{
+            height: 20px;
+            width: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+        }
+        .Watch .watch{
+            font-size: 10px;
+            margin-left: 3px;
+        }
+
+        .Comment{
+            display: flex;
+            flex-direction: row;
+            height: 25px;
+            margin-left: 10px;
+            align-items: center; /* 垂直居中对齐子元素 */
+            justify-content: center; /* 水平居中对齐子元素 */
+        }
+        .Comment .comment-img{
+            height: 20px;
+            width: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+        }
+        .Comment .comment{
+            font-size: 10px;
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="TWC">
+        <div class="Tag">
+            <img class="tag-img" src="tag.svg">
+            <div class="tag"><a href="#">创作集</a></div>
+        </div>
+        <div class="Watch">
+            <img src="./eye.svg" class="eye-img"> <span class="watch" id="watch">999</span>
+        </div>
+        <div class="Comment">
+            <img src="./comment.svg" class="comment-img"> <span class="comment" id="comment">999</span>
+        </div>
+    </div>
+</body>
+</html>

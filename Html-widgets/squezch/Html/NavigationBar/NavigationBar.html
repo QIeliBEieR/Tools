@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧边导航栏</title>
+    <style>
+        /* 基本的样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            padding: 0px;
+            /* background-image: url("yangpizhi.jpg"); */
+        }
+        /* 搜索栏 */
+        .search-bar {
+            width: 15%;
+            height: 30px;
+            background-color: #F6F7FA;
+            display: flex;
+            align-items: center;
+            padding: 0 3px; /* 设置内边距为 3px */
+        }
+
+        /* 设置 search-input 占据 search-bar 的 80% 宽度 */
+        .search-input {
+            width: 80%;
+            padding: 0 5px; /* 设置内边距为 5px */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        /* 设置 search-button 占据 search-bar 的 20% 宽度 */
+        .search-button {
+            height: 30px;
+            width: 20%;
+            padding: 0 5px; /* 设置内边距为 5px */
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .fengexian{
+            width: 15%;
+            color: green;
+            display: block;
+        }
+                        
+        /* 侧边导航栏样式 */
+        .sidenav {
+            width: 15%; /* 设置宽度为总页面的15% */
+            position: fixed;
+            /* 导航栏距离顶部 */
+            top: 55px;
+            left: 0;
+            /* 导航栏背景色 */
+            background-color: #F6F7FA;
+            /* background-image: url("daohangtiao.png") */
+            padding-top: 0px;
+            overflow-y: hidden; /* 默认隐藏纵向滚动条 */
+            max-height: 80%; /* 设置最大高度为总页面高度的80% */
+            transition: overflow-y 0.3s ease; /* 添加过渡效果 */
+            border: 2px red;
+            border-radius: 8px;
+        }
+        .sidenav:hover {
+            overflow-y: auto; /* 鼠标悬停时显示纵向滚动条 */
+        }
+        
+        .sidenav a {
+            /* width: 100%; */
+            padding: 15px 25px;
+            padding-right: 0%;
+            text-decoration: none;
+            font-size: 18px;
+            /* 超链接字体颜色 */
+            color: black;
+            background-color: #F6F7FA;
+            display: block;
+            /* border-radius: 18px; 超链接圆角*/
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            background-color: white;
+            color: aqua;
+        }
+
+        /* 二级导航菜单样式 */
+        .sub-menu {
+            display: none; /* 默认隐藏二级导航菜单 */
+            padding-left: 25px; /* 添加左边距以缩进二级导航菜单 */
+        }
+          /* 当鼠标悬停在一级导航链接上时显示二级导航菜单 */
+        .sidenav a:hover + .sub-menu {
+            display: block;
+        }
+
+        /* 强调当前页面的样式 */
+        .sidenav .active {
+            background-color: #4CAF50; /* 强调色 */
+        }
+        
+        /* 内容区域样式 */
+        .content {
+            margin-left: 18%;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- 外容器 -->
+   <div class="container">
+        <!-- 顶部搜索栏 -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="搜索...">
+            <button class="search-button">搜索</button>
+        </div>
+
+        <div class="fengexian">
+            <hr>
+        </div>
+    
+        <!-- 侧边导航栏 -->
+        <div class="sidenav">
+            <a href="#"  class="active">首页</a>
+                <!-- 一级导航链接后面添加一个包含二级导航链接的 div -->
+                <div class="sub-menu">
+                    <a href="#">加入我们</a>
+                    <a href="#">感谢我们</a>
+                </div>
+            <a href="#">关于我们</a>
+            <a href="#">服务</a>
+                <div class="sub-menu">
+                    <a href="#">加入我们</a>
+                    <a href="#">感谢我们</a>
+                </div>
+            <a href="#">联系我们</a>
+            <a href="#">杂感</a>
+            <a href="#">Notion</a>
+            <a href="#">Java</a>
+        </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+        <h1>欢迎访问我们的网站</h1>
+        <p>这是一个简单的示例侧边导航栏和内容区域。</p>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+        <h1>欢迎访问我们的网站</h1>
+    </div>
+
+    <script>
+        // 使用JavaScript确保鼠标在移动到一级导航上后，保持二级导航可见，直到鼠标移出二级导航
+        const sidenavLinks = document.querySelectorAll(".sidenav a");
+        sidenavLinks.forEach((link) => {
+            const subMenu = link.nextElementSibling;
+            if (subMenu) {
+                link.addEventListener("mouseenter", () => {
+                    subMenu.style.display = "block";
+                });
+
+                link.addEventListener("mouseleave", () => {
+                    subMenu.style.display = "none";
+                });
+
+                subMenu.addEventListener("mouseenter", () => {
+                    subMenu.style.display = "block";
+                });
+
+                subMenu.addEventListener("mouseleave", () => {
+                    subMenu.style.display = "none";
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="daohang">
+    <!-- 一级导航 -->
+    <li ><a href="#">关于我们</a>
+        <!-- 二级导航 -->
+        <dl class="sub-menu">
+            <dd><a href="#">加入我们</a></dd>
+            <dd><a href="#">感谢我们</a></dd>
+        </dl>
+    </li>
+    <li>
+        <a href="#">服务</a>
+    </li>
+    <li>
+        <a href="#">联系我们</a>
+    </li>    
+    <li>
+        <a href="#">杂感</a>
+    </li>    
+    <li>
+        <a href="#">Notion</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+    <li>
+        <a href="#">Java</a>
+    </li>
+</ul>
